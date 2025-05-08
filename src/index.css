@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 html {
-  scroll-padding-top: 8rem; 
+  scroll-padding-top: 9rem; 
 }
 main, .content-container { 
-    margin-top: 8rem; 
+    margin-top: 9rem; 
 }
