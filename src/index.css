@@ -4,3 +4,6 @@
 html {
   scroll-padding-top: 4rem; 
 }
+main, .content-container { 
+    margin-top: 4rem; 
+}
