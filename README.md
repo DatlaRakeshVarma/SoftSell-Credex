@@ -41,7 +41,7 @@ This is a responsive, single-page marketing website for SoftSell, a fictional so
 
 ## Development Time
 
-Approximately 8 hours spent on:
+Approximately 18 hours spent on:
 - Planning and component structure
 - UI/UX design
 - Implementation of all sections
