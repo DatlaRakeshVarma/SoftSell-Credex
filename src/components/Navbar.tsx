@@ -21,10 +21,10 @@ const Navbar: React.FC = () => {
     }`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          <a href='/' className="flex items-center">
+          <div className="flex items-center">
             <MonitorSmartphone className="h-8 w-8 text-primary-600 dark:text-primary-400" />
             <span className="ml-2 text-xl font-bold text-gray-900 dark:text-white">SoftSell</span>
-          </a>
+          </div>
           
           <div className="hidden md:flex items-center space-x-8">
             <a href="#how-it-works" className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
@@ -65,42 +65,44 @@ const Navbar: React.FC = () => {
         
         {/* Mobile menu */}
         {isOpen && (
-          <div className="md:hidden mt-4 py-2 animate-fade-in">
-            <a 
-              href="#how-it-works" 
-              className="block py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"
-              onClick={() => setIsOpen(false)}
-            >
-              How It Works
-            </a>
-            <a 
-              href="#why-choose-us" 
-              className="block py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"
-              onClick={() => setIsOpen(false)}
-            >
-              Why Choose Us
-            </a>
-            <a 
-              href="#testimonials" 
-              className="block py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"
-              onClick={() => setIsOpen(false)}
-            >
-              Testimonials
-            </a>
-            <a 
-              href="#contact" 
-              className="block py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"
-              onClick={() => setIsOpen(false)}
-            >
-              Contact
-            </a>
-            <a 
-              href="#contact" 
-              className="block mt-2 bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-md text-center transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              Get Started
-            </a>
+          <div className="md:hidden absolute top-full left-0 right-0 bg-white dark:bg-gray-900 shadow-lg border-t border-gray-200 dark:border-gray-700 animate-fade-in">
+            <div className="px-4 py-2">
+              <a 
+                href="#how-it-works" 
+                className="block py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"
+                onClick={() => setIsOpen(false)}
+              >
+                How It Works
+              </a>
+              <a 
+                href="#why-choose-us" 
+                className="block py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"
+                onClick={() => setIsOpen(false)}
+              >
+                Why Choose Us
+              </a>
+              <a 
+                href="#testimonials" 
+                className="block py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"
+                onClick={() => setIsOpen(false)}
+              >
+                Testimonials
+              </a>
+              <a 
+                href="#contact" 
+                className="block py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"
+                onClick={() => setIsOpen(false)}
+              >
+                Contact
+              </a>
+              <a 
+                href="#contact" 
+                className="block mt-2 mb-2 bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-md text-center transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Get Started
+              </a>
+            </div>
           </div>
         )}
       </div>
