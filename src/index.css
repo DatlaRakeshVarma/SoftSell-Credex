@@ -1,11 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-html {
-    scroll-padding-top: 9rem; 
-    scroll-behavior: smooth; 
-}
-
-main {
-    margin-top: 9rem; 
-}
